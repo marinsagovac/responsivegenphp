@@ -46,3 +46,7 @@ Run a project and it will show into Android device.
 		webSettings.setDomStorageEnabled(true);
 		lWebView.loadUrl("file:///android_asset/index.htm");
 ```
+
+## Contact
+You can directly contact me on marin[at]sagovac.com for more information.
+My [stackoverflow.com](http://stackoverflow.com/users/1195557/marin-sagovac) profile: 
