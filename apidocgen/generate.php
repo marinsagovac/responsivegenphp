@@ -1,5 +1,7 @@
 <?php
 
+$start_time = microtime(true);
+
 $db_user = 'root';
 $db_pass = $db_user;
 $db_name = 'a_mvcdbdoc';
@@ -179,7 +181,7 @@ $content_section_replace5 = '';
 foreach ($apimenu_result as $apr)
 {
     $from_page = '../indexgen.htm';
-    $to_page = $gen_dir.'/'.$apr["apimenu_menu_link"].'.htm';
+    $to_page = $gen_dir.'/'.trim($apr["apimenu_menu_link"]).'.htm';
     $current_file = substr(strrchr($to_page, '/'), 1).'.htm';
     
     if (strlen($apr["apimenu_menu_link"]) > 0)
@@ -418,3 +420,7 @@ foreach ($apimenu_result as $apr)
     
     
 }
+
+$end_time = microtime(true);
+echo $end_time - $start_time;
+echo ' ms'."\n";

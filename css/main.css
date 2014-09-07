@@ -15,7 +15,7 @@
     background-color: #fff;
     color: #ff6868;
     padding: 3px 4px;
-    text-decoration: none;#menu_container li ul li a
+    text-decoration: none;
 }
 @font-face {
     font-family: "Open Sans";
@@ -225,7 +225,9 @@ div.img-content p {
     min-height: 90px;
     padding-left: 0;
     padding-top: 10px;
+    position: fixed;
     width: 100%;
+    z-index: 1;
 }
 #header_logo {
     float: left;
@@ -242,6 +244,8 @@ li.menu_inner_li:hover {
 #main_content {
     margin-left: 1%;
     margin-right: 1%;
+    position: absolute;
+    top: 108px;
 }
 h1 {
     color: #8e8e8e;
@@ -317,6 +321,7 @@ code.warn {
 }
 .img-contain img {
     margin: 5px 0;
+    max-width: 100%;
 }
 .img-content {
     float: left;
@@ -397,7 +402,7 @@ p#text_block {
 #inner_left_container {
     float: left;
     margin-left: 55%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 }
 @media screen and (min-width: 741px) {
@@ -424,6 +429,7 @@ body {
     background: none repeat scroll 0 0 #fff;
     border-top: medium none;
     padding: 0 10px;
+    min-width: 740px;
 }
 }
 #child_menu {
@@ -454,7 +460,9 @@ body {
     background: none repeat scroll 0 0 #f7f7f7;
 }
 #header_logo img {
-    margin: 7px 10px;
+    margin: 7px 10px; 
+    position: relative;
+    left: 140px;
 }
 li.active {
     background: none repeat scroll 0 0 #efefef !important;
